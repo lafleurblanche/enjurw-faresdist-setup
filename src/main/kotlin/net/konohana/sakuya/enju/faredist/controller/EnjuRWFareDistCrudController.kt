@@ -12,6 +12,14 @@ import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW04FareDist
 import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW05FareDist
 import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW06FareDist
 import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW07FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW08FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW09FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW10FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW11FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW12FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW13FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW14FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW15FareDist
 import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.transaction
 
@@ -72,6 +80,70 @@ fun Route.enjuRWFareDistCrudController() {
                         SchemaUtils.create(EnjuRW07FareDist)
                     }
                     call.respond(mapOf("Created:" to "EnjuRW07FareDist"))
+                }
+            }
+            route("enjurw08faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW08FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW08FareDist"))
+                }
+            }
+            route("enjurw09faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW09FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW09FareDist"))
+                }
+            }
+            route("enjurw10faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW10FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW10FareDist"))
+                }
+            }
+            route("enjurw11faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW11FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW11FareDist"))
+                }
+            }
+            route("enjurw12faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW12FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW12FareDist"))
+                }
+            }
+            route("enjurw13faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW13FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW13FareDist"))
+                }
+            }
+            route("enjurw14faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW14FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW14FareDist"))
+                }
+            }
+            route("enjurw15faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW15FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW15FareDist"))
                 }
             }
         }
