@@ -3,7 +3,7 @@ package net.konohana.sakuya.enju.faredist.models.enju
 import org.jetbrains.exposed.sql.Table
 
 /**
- * ## EnjuRW01FareDistモデル
+ * ## EnjuRW06FareDistモデル
  * * 筁谷線営業キロ情報
  * @author lafleurblanche
  */
