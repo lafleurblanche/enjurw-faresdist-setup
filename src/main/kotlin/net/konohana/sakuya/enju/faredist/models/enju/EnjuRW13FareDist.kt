@@ -2,6 +2,11 @@ package net.konohana.sakuya.enju.faredist.models.enju
 
 import org.jetbrains.exposed.sql.Table
 
+/**
+ * ## EnjuRW13FareDistモデル
+ * * 玿谷線営業キロ情報
+ * @author lafleurblanche
+ */
 object EnjuRW13FareDist : Table("enju_rw13_faredist") {
     /** ID(自動採番) */
     val id = integer("id").autoIncrement()
