@@ -20,6 +20,10 @@ import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW12FareDist
 import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW13FareDist
 import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW14FareDist
 import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW15FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW16FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW17FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW18FareDist
+import net.konohana.sakuya.enju.faredist.models.enju.EnjuRW19FareDist
 import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.transaction
 
@@ -144,6 +148,38 @@ fun Route.enjuRWFareDistCrudController() {
                         SchemaUtils.create(EnjuRW15FareDist)
                     }
                     call.respond(mapOf("Created:" to "EnjuRW15FareDist"))
+                }
+            }
+            route("enjurw16faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW16FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW16FareDist"))
+                }
+            }
+            route("enjurw17faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW17FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW17FareDist"))
+                }
+            }
+            route("enjurw18faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW18FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW18FareDist"))
+                }
+            }
+            route("enjurw19faredist") {
+                post {
+                    transaction {
+                        SchemaUtils.create(EnjuRW19FareDist)
+                    }
+                    call.respond(mapOf("Created:" to "EnjuRW19FareDist"))
                 }
             }
         }
